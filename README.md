@@ -1,3 +1,24 @@
+貼文首頁 <br>
+url:http://127.0.0.1:8000/api/post
+![image](https://github.com/wenying823/post/blob/main/%E9%A6%96%E9%A0%81.png) <br>
+
+新增貼文 <br>
+Route::post('/post/create', PostController::class . '@create')->name('post.create');
+![image](https://github.com/wenying823/post/blob/main/%E6%96%B0%E5%A2%9E%E8%B2%BC%E6%96%87.png) <br>
+
+留言區 <br>
+Route::get('/post/{id}', PostController::class . '@show');
+![image](https://github.com/wenying823/post/blob/main/%E7%95%99%E8%A8%80%E5%8D%80.png) <br>
+
+新增留言 <br>
+Route::post('/post/createMessage/{id}', PostController::class . '@messageCreate')->name('message.create');
+![image](https://github.com/wenying823/post/blob/main/%E6%96%B0%E5%A2%9E%E7%95%99%E8%A8%80.png) <br>
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
